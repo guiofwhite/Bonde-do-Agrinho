@@ -23,7 +23,7 @@ body{
 .principal{
     background-image: url("mar.jpeg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     align-items: center;
     text-align: center;
 }
