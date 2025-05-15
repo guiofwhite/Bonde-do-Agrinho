@@ -23,7 +23,7 @@ body{
 .principal{
     background-image: url("saneamento.png");
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 100%;
     align-items: center;
     text-align: center;
     height: 100%;
