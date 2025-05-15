@@ -30,14 +30,14 @@ body{
     width: 100%;
 }
 
-.container{
-    height: 100vh;
-    display:  grid;
-    grid-template-columns: 50% 50%;
+/* .container{ */
+    /* height: 100vh; */
+    /* display:  grid; */
+    /* grid-template-columns: 50% 50%; */
 }
 
-/* .container__caixa{ */
-    /* margin: 0 6em; */
+.container__caixa{
+    margin: 0 6em;
 }
 
 .container__titulo{
