@@ -12,6 +12,11 @@
     padding: 0;
 }
 
+.img__reni{
+    position: absolute;
+    right: 10dvw;
+}
+
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
