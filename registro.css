@@ -70,7 +70,6 @@ button:hover {
 
 .botao__voltar{
     background-color: #000000;
-    text-decoration: none;
     color: white;
     margin: auto 0;
     padding: 10px 15px;
@@ -84,4 +83,5 @@ button:hover {
 
 a{
     color: #f4f4f4;
+    text-decoration: none;
 }
