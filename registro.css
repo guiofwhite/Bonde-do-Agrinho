@@ -65,9 +65,9 @@ button {
 }
 
 button:hover {
-    background-color:rgb(114, 107, 107);
+    background-color:rgb(255, 255, 255);
 }
 
 .botao__voltar{
-    background-color: #757575;
+    background-color: #555454;
 }
