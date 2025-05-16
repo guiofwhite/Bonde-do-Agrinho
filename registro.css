@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+form{
+    width: 50%;
+}
+
 .formulario {
     background-color: #fff;
     padding: 20px;
