@@ -10,7 +10,8 @@ body {
 
 form{
     width: 40%;
-    color: #555;
+    background-color: #555;
+    background-size: 10px;
 }
 
 .formulario {
