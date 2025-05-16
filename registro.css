@@ -65,5 +65,8 @@ button {
 }
 
 button:hover {
-    background-color:red;
+    background-color:rgb(114, 107, 107);
+    border-radius: 10px;
+    background-size: 40%;
+    
 }
