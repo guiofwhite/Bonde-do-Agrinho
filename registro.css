@@ -9,8 +9,9 @@ body {
 }
 
 form{
-    width: 60%;
+    width: 40%;
     background-color: #555;
+    height: 30%;
 }
 
 .formulario {
