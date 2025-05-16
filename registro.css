@@ -11,7 +11,7 @@ body {
 form{
     width: 40%;
     background-color: #757575;
-    justify-content: center;
+  display: flex;
     
 }
 
@@ -78,8 +78,7 @@ button:hover {
     cursor: pointer;
     font-size: 16px;
     width: 50%;
-    align-items: center;
-}
+justify-content: center;}
 
 a{
     color: #f4f4f4;
