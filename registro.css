@@ -69,6 +69,7 @@ button:hover {
 }
 
 .botao__voltar{
+    text-align: center;
     background-color: #000000;
     color: white;
     margin: 1em 0 1em 0;
