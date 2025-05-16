@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
     <title>Faça seu cadastro</title>
     <link rel="stylesheet" href="registro.css">
-   
 </head>
 <body>
-    <form action="">
-        <p>nome:<input type="text"></p>
-        <p>idade: <input type="number"></p>
-        <p>endereço: <input type="text"></p>
-        <p>bairro: <input type="text"></p>
-        <p>cidade: <input type="text"></p>
-        <p>estado: <input type="text"></p>
-        <p>pais: <input type="text"></p>
-        
-
-
-
-
-        <p> qual a preferência do horário: </p>
-        <select name="" id="">
-            <option value="">Cedo</option>
-            <option value="">Atarde</option>
-          
-
-        </select>
-        <p>Deixe uma mensagem: </p>
-        <textarea name="" id="" cols="70" rows="10"></textarea>
-
-        <button><a href="index.html">página inicial</a></button>
+    <div>
+        <h2>Cadastro</h2>
+        <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+            <div>
+                <label for="corCasa">Cor da Casa:</label>
+                <input type="text" id="corCasa" name="corCasa">
+            </div>
+            <div>
+                <label for="numeroCasa">Número da Casa:</label>
+                <input type="number" id="numeroCasa" name="numeroCasa">
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
 </body>
 </html>
