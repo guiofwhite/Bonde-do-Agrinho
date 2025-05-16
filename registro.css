@@ -66,7 +66,4 @@ button {
 
 button:hover {
     background-color:rgb(114, 107, 107);
-    border-radius: 10px;
-    background-size: 40%;
-    
 }
