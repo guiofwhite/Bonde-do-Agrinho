@@ -1,4 +1,5 @@
 body{
     text-align: center;
     background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
 }
