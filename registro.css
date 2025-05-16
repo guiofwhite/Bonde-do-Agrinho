@@ -28,6 +28,7 @@ h2 {
     background-image: url(fundo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding: 1em;
 }
 
 div > div {
