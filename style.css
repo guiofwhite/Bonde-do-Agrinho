@@ -11,15 +11,12 @@
     margin: 0;
     padding: 0;
 }
-
-.img{
-    
-}
-
 .img__reni{
     position: absolute;
-    left: 3dvw;
-    top: 5dvw;
+    left: 1dvw;
+    top: 1dvw;
+    background-color: snow;
+    border-radius: 45px;
 }
 
 body{
