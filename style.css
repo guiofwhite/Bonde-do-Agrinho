@@ -82,6 +82,7 @@ body{
 
 .secundario__imagem{
     width: 80%;
+    position: absolute;
 }
 
 .container__descricao{
