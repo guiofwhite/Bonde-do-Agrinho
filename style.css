@@ -104,9 +104,3 @@ body{
     color: var(--cinza-secundario);
 }
 
-/* .a__link{ */
-    text-decoration: none;
-    color: var(--branco-principal);
-    margin-left: 1em;
-}
-
