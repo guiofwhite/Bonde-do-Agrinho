@@ -82,7 +82,9 @@ body{
 }
 
 .secundario__imagem{
-    width: 80%;    
+    width: 80%;   
+    height: auto;
+    display: block; 
 }
 
 .container__descricao{
