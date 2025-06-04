@@ -85,3 +85,7 @@ a{
     color: #f4f4f4;
     text-decoration: none;
 }
+
+.maps{
+    display: none;
+}
