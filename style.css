@@ -1,220 +1,153 @@
-:root {
-    --color-white: #FFFFFF;
-    --color-light-gray: #faf1f1;
-    --color-blue-primary: #569ff8;
-    --color-blue-darker: #3486eb;
-    --color-black: #000000;
-
-    --font-primary: "Indie Flower", cursive;
-    --font-title: sans-serif;
+/* Estilos Globais e do Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8f0;
+    background-image: url("https://st2.depositphotos.com/2488555/10071/v/950/depositphotos_100711092-stock-illustration-natural-green-background-with-tropical.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+/* Estilos do Formulário */
+form {
+    width: 90%;
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--color-black);
-    color: #000000;
-    /* Changed to black */
-    font-family: var(--font-primary);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-
-.btn {
-    background-color: var(--color-blue-primary);
-    border-radius: 5px;
-    padding: 1em;
-    color: #000000;
-    /* Changed to black */
-    display: block;
-    text-decoration: none;
+/* Estilos do Título H2 */
+h2 {
     text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-
-.btn:hover {
-    background-color: var(--color-blue-darker);
-}
-
-.btn--secondary {
-    background-color: transparent;
-    border: 2px solid #000000;
-    /* Border changed to black */
-    color: #000000;
-    /* Changed to black */
-}
-
-.btn--secondary:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    /* Adjusted for black text */
-}
-
-.principal {
-    background-image: url("saneamento.jpg");
+    background-image: url("https://img.freepik.com/fotos-gratis/vista-superior-da-bela-folha-da-planta-com-espaco-de-copia_23-2148769061.jpg?semt=ais_hybrid&w=740");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 1.5em;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.principal .container__caixa {
-    margin: 0 6em;
-    padding: 2em 0;
-}
-
-.principal__title {
-    font-size: 28px;
-    font-weight: 700;
-    font-family: var(--font-title);
-    margin-bottom: 0.5em;
-    color: #000000;
-    /* Changed to black */
-}
-
-.principal__image {
-    margin: 1em auto 2em;
-    max-width: 100%;
-    height: auto;
-}
-
-.principal__button {
-    margin-bottom: 1em;
-}
-
-.principal__warning {
-    font-size: 12px;
-    color: #000000;
-    /* Changed to black */
-    margin-top: 1em;
-}
-
-.secundario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4em 10em;
-    gap: 2em;
-}
-
-.secundario__image {
-    width: 80%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* Estilos para Divs Aninhadas (Containers de Campo) */
+.form-group {
     margin-bottom: 20px;
 }
 
-.secundario__description {
-    padding: 2em;
+/* Estilos dos Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95em;
 }
 
-.secundario__title {
-    font-weight: 700;
-    font-size: 48px;
-    color: #000000;
-    /* Changed to black */
-    margin-bottom: 0.2em;
-    font-family: var(--font-title);
-}
-
-.secundario__text {
-    color: #000000;
-    /* Changed to black */
-}
-
-.img__reni {
-    position: absolute;
-    left: 1dvw;
-    top: 1dvw;
-    background-color: snow;
-    border-radius: 117px;
-    z-index: 10;
-}
-
-.container__botao {
-    background-color: #4CAF50;
-    /* Cor de fundo verde */
-    color: white;
-    /* Cor do texto branca */
-    padding: 15px 30px;
-    /* Espaçamento interno (altura e largura) */
-    border: none;
-    /* Sem borda */
+/* Estilos dos Inputs de Texto */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    /* Cantos arredondados */
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos dos Inputs ao Focar */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.25);
+    outline: none;
+}
+
+/* Estilos do Botão Principal */
+.button-primary {
+    background-color: #28a745;
+    color: white;
+    margin: 25px 0 15px 0;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    /* Muda o cursor para indicar que é clicável */
-    font-size: 18px;
-    /* Tamanho da fonte */
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
-    /* Alinhamento do texto */
+    font-size: 1.1em;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-primary:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-primary:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do Botão de Voltar */
+.button-secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-secondary:active {
+    background-color: #4e555b;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos dos Links */
+a {
+    color: #28a745;
     text-decoration: none;
-    /* Remove sublinhado para links (se usar <a>) */
-    display: inline-block;
-    /* Permite que o botão se ajuste ao conteúdo */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Transição suave para hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para profundidade */
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.container__botao:hover {
-    background-color: #45a049;
-    /* Escurece um pouco o verde */
-    transform: translateY(-2px);
-    /* Efeito de "levantar" */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    /* Aumenta a sombra */
+a:hover {
+    text-decoration: underline;
+    color: #218838;
 }
 
-.container__botao: :active{
-    background-color: #3e8e41; /* Escurece ainda mais */
-    transform: translateY(0); /* Volta à posição original */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Diminui a sombra */
-}
-
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        height: auto;
-    }
-
-    .principal,
-    .secundario {
-        margin: 2em 1em;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container__caixa {
-        margin: 0 2em;
-    }
-
-    .secundario__image {
-        width: 60%;
-        margin-bottom: 1em;
-    }
-
-    .secundario__title {
-        font-size: 36px;
-    }
+/* Esconder o Elemento Maps */
+.maps {
+    display: none;
 }
