@@ -1,143 +1,118 @@
 :root {
-    --color-white: #FFFFFF;
-    --color-light-gray: #faf1f1;
-    --color-blue-primary: #569ff8;
-    --color-blue-darker: #3486eb;
-    --color-black: #000000;
-
-    --font-primary: "Indie Flower", cursive;
-    --font-title: sans-serif;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #faf1f1;
+    --botao-azul: #569ff8;
+    --cor-de-fundo: #000000;
+    --fonte-principal: "Indie Flower";
+    --botao-azul-efeito: #3486eb;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    font-family: var(--font-primary);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-
-.btn {
-    background-color: var(--color-blue-primary);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--color-white);
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: var(--color-blue-darker);
-}
-
-.btn--secondary {
-    background-color: transparent;
-    border: 2px solid var(--color-white);
-}
-
-.btn--secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.principal {
-    background-image: url("saneamento.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.principal .container__caixa {
-    margin: 0 6em;
-    padding: 2em 0;
-}
-
-.principal__title {
-    font-size: 28px;
-    font-weight: 700;
-    font-family: var(--font-title);
-    margin-bottom: 0.5em;
-}
-
-.principal__image {
-    margin: 1em auto 2em;
-    max-width: 100%;
-    height: auto;
-}
-
-.principal__button {
-    margin-bottom: 1em;
-}
-
-.principal__warning {
-    font-size: 12px;
-    color: var(--color-light-gray);
-    margin-top: 1em;
-}
-
-.secundario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4em 10em;
-    gap: 2em;
-}
-
-.secundario__image {
-    width: 80%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.secundario__description {
-    padding: 2em;
-}
-
-.secundario__title {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--color-white);
-    margin-bottom: 0.2em;
-    font-family: var(--font-title);
-}
-
-.secundario__text {
-    color: var(--color-light-gray);
-}
-
-.img__reni {
+.img__reni{
     position: absolute;
     left: 1dvw;
     top: 1dvw;
     background-color: snow;
     border-radius: 117px;
-    z-index: 10;
 }
 
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        height: auto;
-    }
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("saneamento.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display:  grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--fonte-titulo);
+}
+
+.container__imagem{
+    margin: 1em 0 2em, 0;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 80%;   
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+    font-family: var(--fonte-titulo);
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.container__secundario{
+    left: 1dvw;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
