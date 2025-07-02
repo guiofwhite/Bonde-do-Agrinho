@@ -17,7 +17,8 @@
 
 body {
     background-color: var(--color-black);
-    color: #000000; /* Changed to black */
+    color: #000000;
+    /* Changed to black */
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 400;
@@ -35,7 +36,8 @@ body {
     background-color: var(--color-blue-primary);
     border-radius: 5px;
     padding: 1em;
-    color: #000000; /* Changed to black */
+    color: #000000;
+    /* Changed to black */
     display: block;
     text-decoration: none;
     text-align: center;
@@ -49,12 +51,15 @@ body {
 
 .btn--secondary {
     background-color: transparent;
-    border: 2px solid #000000; /* Border changed to black */
-    color: #000000; /* Changed to black */
+    border: 2px solid #000000;
+    /* Border changed to black */
+    color: #000000;
+    /* Changed to black */
 }
 
 .btn--secondary:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Adjusted for black text */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Adjusted for black text */
 }
 
 .principal {
@@ -78,7 +83,8 @@ body {
     font-weight: 700;
     font-family: var(--font-title);
     margin-bottom: 0.5em;
-    color: #000000; /* Changed to black */
+    color: #000000;
+    /* Changed to black */
 }
 
 .principal__image {
@@ -93,7 +99,8 @@ body {
 
 .principal__warning {
     font-size: 12px;
-    color: #000000; /* Changed to black */
+    color: #000000;
+    /* Changed to black */
     margin-top: 1em;
 }
 
@@ -121,13 +128,15 @@ body {
 .secundario__title {
     font-weight: 700;
     font-size: 48px;
-    color: #000000; /* Changed to black */
+    color: #000000;
+    /* Changed to black */
     margin-bottom: 0.2em;
     font-family: var(--font-title);
 }
 
 .secundario__text {
-    color: #000000; /* Changed to black */
+    color: #000000;
+    /* Changed to black */
 }
 
 .img__reni {
@@ -139,20 +148,48 @@ body {
     z-index: 10;
 }
 
-.container__botao{
-     background-color: #4CAF50; /* Cor de fundo verde */
-    color: white; /* Cor do texto branca */
-    padding: 15px 30px; /* Espaçamento interno (altura e largura) */
-    border: none; /* Sem borda */
-    border-radius: 8px; /* Cantos arredondados */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Remove sublinhado para links (se usar <a>) */
-    display: inline-block; /* Permite que o botão se ajuste ao conteúdo */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+.container__botao {
+    background-color: #4CAF50;
+    /* Cor de fundo verde */
+    color: white;
+    /* Cor do texto branca */
+    padding: 15px 30px;
+    /* Espaçamento interno (altura e largura) */
+    border: none;
+    /* Sem borda */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+    font-size: 18px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+    text-align: center;
+    /* Alinhamento do texto */
+    text-decoration: none;
+    /* Remove sublinhado para links (se usar <a>) */
+    display: inline-block;
+    /* Permite que o botão se ajuste ao conteúdo */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Transição suave para hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para profundidade */
+}
+
+.container__botao:hover {
+    background-color: #45a049;
+    /* Escurece um pouco o verde */
+    transform: translateY(-2px);
+    /* Efeito de "levantar" */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Aumenta a sombra */
+}
+
+.container__botao: :active{
+    background-color: #3e8e41; /* Escurece ainda mais */
+    transform: translateY(0); /* Volta à posição original */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Diminui a sombra */
 }
 
 @media (max-width: 768px) {
@@ -181,6 +218,3 @@ body {
         font-size: 36px;
     }
 }
-
-
-
