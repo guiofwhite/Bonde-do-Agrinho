@@ -1,103 +1,91 @@
 body {
     font-family: sans-serif;
-    background-color: #f0f2f5;
+    background-color: #c2c2c2;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    line-height: 1.6;
+    background-color: #ffffff;
 }
 
-/* --- Form Styling --- */
-.form-container {
-    background-color: #e2d9d9;
-    padding: 30px;
+form{
+    width: 40%;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.formulario {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 h2 {
     text-align: center;
-    background-image: url("https://img.freepik.com/fotos-gratis/vista-superior-da-bela-folha-da-planta-com-espaco-de-copia_23-2148769061.jpg?semt=ais_hybrid&w=740");
+    background-image: url(fundo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 1.5em 1em;
-    color: #000000; /* Set to black */
-    border-radius: 8px 8px 0 0;
-    margin: -30px -30px 20px -30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    background-size: 100%;
+    padding: 1em;
 }
 
-.form-group {
-    margin-bottom: 20px;
+div > div {
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-weight: bold;
-    color: #000000; /* Set to black */
-    font-size: 0.95em;
+    color: #555;
 }
 
 input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #000000;
-    border-radius: 6px;
+input[type="number"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
-    color: #000000; /* Set input text color to black */
-    transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
-}
-
-/* --- Buttons --- */
-.btn {
-    background-color: #007bff;
-    color: #000000; /* Set to black */
-    padding: 12px 20px;
+button {
+    background-color: #000000;
+    color: white;
+    margin: 1em 0 1em 0;
+    padding: 10px 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 16px;
     width: 100%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-1px);
+button:hover {
+    background-color:#555454;
 }
 
-.btn-primary {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.botao__voltar{
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+justify-content: center;}
+
+a{
+    color: #f4f4f4;
+    text-decoration: none;
 }
 
-.btn-secondary {
-    background-color: #6c757d;
-    text-align: center;
-    display: block;
-    color: #000000; /* Set to black */
+.maps{
+    display: none;
 }
-
-.btn-secondary:hover {
-    background-
