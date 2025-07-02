@@ -24,12 +24,6 @@ body {
     line-height: 1.6;
 }
 
-<<<<<<< HEAD
-.principal{
-    background-image: url(saneamento.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-=======
 .container {
     height: 100vh;
     display: grid;
@@ -147,3 +141,24 @@ body {
         grid-template-columns: 1fr;
         height: auto;
     }
+
+    .principal,
+    .secundario {
+        margin: 2em 1em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container__caixa {
+        margin: 0 2em;
+    }
+
+    .secundario__image {
+        width: 60%;
+        margin-bottom: 1em;
+    }
+
+    .secundario__title {
+        font-size: 36px;
+    }
+}
