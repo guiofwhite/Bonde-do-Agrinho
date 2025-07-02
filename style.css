@@ -42,6 +42,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
+
 .btn:hover {
     background-color: var(--color-blue-darker);
 }
@@ -138,6 +139,22 @@ body {
     z-index: 10;
 }
 
+.container__botao{
+     background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    padding: 15px 30px; /* Espaçamento interno (altura e largura) */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove sublinhado para links (se usar <a>) */
+    display: inline-block; /* Permite que o botão se ajuste ao conteúdo */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -164,3 +181,6 @@ body {
         font-size: 36px;
     }
 }
+
+
+
