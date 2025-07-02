@@ -92,13 +92,13 @@ input[type="password"]:focus {
 }
 
 .btn-secondary {
-    background-color: #6c757d;
+    background-color: #313538;
     text-align: center;
     display: block;
 }
 
 .btn-secondary:hover {
-    background-color: #5a6268;
+    background-color: #2c343a;
 }
 
 a {
