@@ -14,14 +14,14 @@ form {
     max-width: 450px;
     background-color: #fff;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 
 h2 {
     text-align: center;
-    background-image: url(fundo.jpg);
+    background-image: url("https://img.freepik.com/fotos-gratis/vista-superior-da-bela-folha-da-planta-com-espaco-de-copia_23-2148769061.jpg?semt=ais_hybrid&w=740");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
