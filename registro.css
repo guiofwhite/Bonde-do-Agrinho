@@ -27,7 +27,7 @@ h2 {
     background-size: cover;
     background-position: center;
     padding: 1.5em 1em;
-    color: #000000;
+    color: #000000; /* Set to black */
     border-radius: 8px 8px 0 0;
     margin: -30px -30px 20px -30px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -41,7 +41,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #333;
+    color: #000000; /* Set to black */
     font-size: 0.95em;
 }
 
@@ -55,6 +55,7 @@ input[type="password"] {
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
+    color: #000000; /* Set input text color to black */
     transition: border-color 0.3s ease;
 }
 
@@ -70,7 +71,7 @@ input[type="password"]:focus {
 /* --- Buttons --- */
 .btn {
     background-color: #007bff;
-    color: rgb(5, 5, 5);
+    color: #000000; /* Set to black */
     padding: 12px 20px;
     border: none;
     border-radius: 6px;
@@ -92,36 +93,11 @@ input[type="password"]:focus {
 }
 
 .btn-secondary {
-    background-color: #313538;
+    background-color: #6c757d;
     text-align: center;
     display: block;
+    color: #000000; /* Set to black */
 }
 
 .btn-secondary:hover {
-    background-color: #2c343a;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-}
-
-/* --- Specific Elements --- */
-.maps {
-    display: none;
-}
-
-/* --- Responsive Adjustments (Example) --- */
-@media (max-width: 600px) {
-    .form-container {
-        padding: 20px;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-    h2 {
-        margin: -20px -20px 20px -20px;
-        border-radius: 0;
-    }
-}
+    background-
