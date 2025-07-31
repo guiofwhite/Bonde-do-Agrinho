@@ -10,21 +10,34 @@
 <body>
     
         <form>
-            <h2>Cadastro</h2>
+            <h2>Registro</h2>
 
             <div class="formulario">
-                <label for="nome">Nome:</label>
+                <label for="nome">Nome da testemunha:</label>
                 <input type="text" id="nome" name="nome" required>
+
+                <label for="bairro">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
             
-                <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" required>
+                <label for="endereco">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
            
                 <label for="bairro">Bairro:</label>
                 <input type="text" id="bairro" name="bairro" required>
+
+                <label for="bairro">Rua:</label>
+                <input type="text" id="rua" name="rua" required>
+
+                <label for="bairro">Número da Casa mais Próxima</label>
+                <input type="number" id="numero" name="numero" required>
+
+                <label for="bairro">CEP(se possível):</label>
+                <input type="number" id="cep" name="cep">
             
                 <label for="numeroCasa">Número da Casa:</label>
                 <input type="number" id="numeroCasa" name="numeroCasa" required>
-                <button type="submit">Cadastrar</button>
+
+                <button type="submit">Enviar</button>
                 <a href="index.html"><button class="botao__voltar" type="button">Voltar</button></a>
             </div>
 
