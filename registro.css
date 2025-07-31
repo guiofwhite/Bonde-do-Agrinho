@@ -133,7 +133,7 @@ a:hover {
   margin-bottom: 10px;
   font-size: 12px;
   background-color: rgb(59, 190, 59);
-  padding: 1%;
+  padding: 3%;
 }
 
 #previewImage {
@@ -142,5 +142,3 @@ a:hover {
   display: none; /* Para garantir que a imagem não fique inline */
   margin-top: 10px; /* Espaço acima da imagem */
 }
-
-.botao-imagem
