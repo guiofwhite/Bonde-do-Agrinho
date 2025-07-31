@@ -16,7 +16,7 @@
                 <label for="nome">Nome da testemunha:</label>
                 <input type="text" id="nome" name="nome" required>
 
-                <label for="bairro">Estado:</label>
+                <label for="estado">Estado:</label>
                 <input type="text" id="estado" name="estado" required>
             
                 <label for="endereco">Cidade:</label>
@@ -25,16 +25,17 @@
                 <label for="bairro">Bairro:</label>
                 <input type="text" id="bairro" name="bairro" required>
 
-                <label for="bairro">Rua:</label>
+                <label for="rua">Rua:</label>
                 <input type="text" id="rua" name="rua" required>
 
-                <label for="bairro">Número da Casa mais Próxima</label>
+                <label for="numero">Número da Casa mais Próxima</label>
                 <input type="number" id="numero" name="numero" required>
 
-                <label for="bairro">CEP(se possível):</label>
+                <label for="cep">CEP(se possível):</label>
                 <input type="number" id="cep" name="cep">
 
-                <input type="file" id="imageInput" accept="image/*">
+                <label for="imageInput">Envie pelo menos uma imagem</label>
+                <input type="file" id="imageInput" accept="image/* required>
                 <img id="previewImage" src="#" alt="Preview da Imagem" style="display: none;">
 
                 <button type="submit">Enviar</button>
