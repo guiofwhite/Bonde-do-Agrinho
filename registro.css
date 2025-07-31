@@ -35,7 +35,7 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-div>div {
+div > div {
     margin-bottom: 20px;
 }
 
@@ -129,27 +129,13 @@ a:hover {
     display: none;
 }
 
-#imageContainer {
-    width: 200px;
-    /* Largura desejada */
-    height: 150px;
-    /* Altura desejada */
-    border: 1px solid black;
-    /* Adiciona uma borda */
-    overflow: hidden;
-    /* Corta a imagem se ela for maior que o contêiner */
-}
-
-#selectedImage {
-    width: 100%;
-    /* A imagem preenche a largura do contêiner */
-    height: 100%;
-    /* A imagem preenche a altura do contêiner */
-    object-fit: cover;
-    /* Mantém a proporção da imagem, cobrindo o contêiner */
-}
-
 #imageInput {
-    margin-bottom: 10px;
-    /* Espaço abaixo do input */
+  margin-bottom: 10px;
+}
+
+#previewImage {
+  max-width: 300px; /* Ajuste conforme necessário */
+  max-height: 200px; /* Ajuste conforme necessário */
+  display: block; /* Para garantir que a imagem não fique inline */
+  margin-top: 10px; /* Espaço acima da imagem */
 }
